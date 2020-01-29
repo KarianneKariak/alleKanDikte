@@ -1,4 +1,160 @@
 .App {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.overskrift {
+  font-weight: 300;
+  font-size: 3em;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 2em;
+}
+
+.ramme {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2em;
+}
+
+.dikt {
+  padding: 3em 3em 5em;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  border: 2px solid black;
+  background: white;
+  font-size: 3.5em;
+  font-weight: 500;
+  text-transform: lowercase;
+  border-radius: 1em;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.red {
+  color: white;
+  border: none;
+  background: #900c3f;
+}
+
+.grey {
+  color: white;
+  border: none;
+  background: #5f6769;
+}
+
+.blue {
+  color: white;
+  border: none;
+  background: #173f5f;
+}
+
+.vanligFarge {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.testFarge {
+  color: darkslategrey;
+}
+
+div {
+  padding: 1em;
+}
+
+.wrapValg {
+  display: grid;
+  column-gap: 2em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  justify-items: center;
+  width: 100%;
+}
+
+.input_field {
+  border: none;
+  border-bottom: 2px solid black;
+  padding: 2em;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.input_field:hover {
+  border-bottom: 2px solid darkslategrey;
+}
+
+.input_field::placeholder {
+  color: black;
+}
+
+.align_radio {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  margin-bottom: 1em;
+  align-items: center;
+}
+
+.container > input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  /*position: absolute;*/
+  height: 25px;
+  width: 25px;
+  margin-right: 1em;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.checkmark:hover {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: black;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
