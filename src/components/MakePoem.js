@@ -12,17 +12,19 @@ const MakePoem = ({ lines }) => {
 
   return (
     <>
-      <div className="wrapValg">
-        <Backgrounds
-          blue={() => setColor("blue")}
-          red={() => setColor("red")}
-          grey={() => setColor("grey")}
-        />
-        <AlignPoem
-          center={() => setAlign("center")}
-          left={() => setAlign("left")}
-          right={() => setAlign("right")}
-        />
+      <div className={"wrapperValg"}>
+        <div className="wrapValg">
+          <Backgrounds
+            blue={() => setColor("blue")}
+            red={() => setColor("red")}
+            grey={() => setColor("grey")}
+          />
+          <AlignPoem
+            center={() => setAlign("center")}
+            left={() => setAlign("left")}
+            right={() => setAlign("right")}
+          />
+        </div>
       </div>
       <div className="ramme">
         <div
