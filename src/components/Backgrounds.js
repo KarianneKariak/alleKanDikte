@@ -4,7 +4,7 @@ import no from "../no";
 
 const Backgrounds = ({ red, blue, grey }) => (
   <div>
-    <div>Velg bakgrunn</div>
+    <div>{no.selectBackground}</div>
     <div>
       <label className={"container"}>
         <input

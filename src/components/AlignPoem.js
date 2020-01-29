@@ -4,8 +4,7 @@ import no from "../no";
 
 const AlignPoem = ({ left, center, right }) => (
   <div>
-    <div>Juster tekst</div>
-
+    <div>{no.alignText}</div>
     <div>
       <label className="container">
         <input
@@ -44,7 +43,7 @@ const AlignPoem = ({ left, center, right }) => (
 AlignPoem.propTypes = {
   left: PropTypes.func,
   center: PropTypes.func,
-  right: PropTypes.func,
+  right: PropTypes.func
 };
 
 export default AlignPoem;
