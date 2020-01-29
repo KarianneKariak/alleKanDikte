@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import no from "../no";
 
 const Backgrounds = ({ red, blue, grey }) => (
   <div>
@@ -13,7 +14,7 @@ const Backgrounds = ({ red, blue, grey }) => (
           className="radio_button"
         />
         <span className="checkmark" />
-        Rød
+        {no.red}
       </label>
       <label className={"container"}>
         <input
@@ -23,7 +24,7 @@ const Backgrounds = ({ red, blue, grey }) => (
           className="radio_button"
         />
         <span className="checkmark" />
-        Blå
+        {no.blue}
       </label>
       <label className={"container"}>
         <input
@@ -33,7 +34,7 @@ const Backgrounds = ({ red, blue, grey }) => (
           className="radio_button"
         />
         <span className="checkmark" />
-        Grå
+        {no.grey}
       </label>
     </div>
   </div>

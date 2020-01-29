@@ -7,9 +7,6 @@ const MakePoem = ({ lines }) => {
   const [color, setColor] = useState("");
   const [align, setAlign] = useState("");
 
-  console.log(color);
-  console.log(align);
-
   return (
     <>
       <div className={"wrapperValg"}>

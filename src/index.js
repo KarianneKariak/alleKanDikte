@@ -4,13 +4,14 @@ import "./styles.css";
 import PoemInput from "./components/PoemInput";
 import usePoemState from "./js/usePoemState";
 import MakePoem from "./components/MakePoem";
+import no from "./no";
 
 const App = () => {
   const { line, addLine } = usePoemState([]);
   return (
     <div className="App">
       <div>
-        <text className="overskrift">Lag Trygve Skaug inspirerte dikt</text>
+        <text className="overskrift">{no.makePoemsLikeTrygve}</text>
       </div>
       <PoemInput saveLine={addLine} />
       <MakePoem lines={line} />

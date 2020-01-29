@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import no from "../no";
 
 const AlignPoem = ({ left, center, right }) => (
   <div>
@@ -14,7 +15,7 @@ const AlignPoem = ({ left, center, right }) => (
           className="radio_button"
         />
         <span className="checkmark" />
-        Venstre
+        {no.left}
       </label>
       <label className="container">
         <input
@@ -24,7 +25,7 @@ const AlignPoem = ({ left, center, right }) => (
           className="radio_button"
         />
         <span className="checkmark" />
-        Sentrert
+        {no.center}
       </label>
       <label className="container">
         <input
@@ -34,7 +35,7 @@ const AlignPoem = ({ left, center, right }) => (
           className="radio_button"
         />
         <span className="checkmark" />
-        Høyre
+        {no.right}
       </label>
     </div>
   </div>
