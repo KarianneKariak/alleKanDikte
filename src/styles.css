@@ -162,6 +162,7 @@ button {
 }
 .alignPoem_wrapper {
   padding: 1em;
+  overflow:auto;
 }
 
 .alignPoem_wrapper > button {

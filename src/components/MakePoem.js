@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import classNames from "classnames";
 import Backgrounds from "./Backgrounds";
 import AlignPoem from "./AlignPoem";
+import no from "../no";
 
 const MakePoem = ({ lines, deleteLines }) => {
   const [color, setColor] = useState("");
   const [align, setAlign] = useState("");
-  const [openBackground, setOpenBackground] = useState(false);
-  const [openAlignment, setOpenAlignment] = useState(false);
+  const [openBackground, setOpenBackground] = useState(true);
+  const [openAlignment, setOpenAlignment] = useState(true);
 
   return (
     <>
@@ -29,7 +30,7 @@ const MakePoem = ({ lines, deleteLines }) => {
           />
         </div>
       </div>
-      <div className="main_heading">Diktet vil dukke opp her: </div>
+      {lines.length > 0 && <div className="main_heading"> {no.yourPoem} </div>}
       <div className="poem_frame">
         <div
           className={classNames({
