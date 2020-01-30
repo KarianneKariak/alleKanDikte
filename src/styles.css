@@ -162,7 +162,6 @@ button {
 }
 .alignPoem_wrapper {
   padding: 1em;
-  overflow:auto;
 }
 
 .alignPoem_wrapper > button {
@@ -176,4 +175,19 @@ button {
 
 .wrap_input {
   margin: 1em 1em 3em;
+}
+
+/*for printing*/
+@media print {
+  header,
+  footer {
+    display: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background-color: #fff;
+  }
 }
