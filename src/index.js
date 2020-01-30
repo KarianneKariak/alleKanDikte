@@ -5,12 +5,13 @@ import PoemInput from "./components/PoemInput";
 import usePoemState from "./js/usePoemState";
 import MakePoem from "./components/MakePoem";
 import no from "./no";
+import { FaChevronDown } from "react-icons/all";
 
 const App = () => {
   const { line, addLine, deleteLines } = usePoemState([]);
   return (
     <div className="App">
-      <div className="overskrift">
+      <div className="main_heading">
         <text>{no.makePoemsLikeTrygve}</text>
       </div>
       <PoemInput saveLine={addLine} />

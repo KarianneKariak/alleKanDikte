@@ -3,7 +3,7 @@
   text-align: center;
 }
 
-.overskrift {
+.main_heading {
   font-weight: 300;
   font-size: 3em;
   font-family: "Roboto", sans-serif;
@@ -11,13 +11,14 @@
   margin-top: 2em;
 }
 
-.ramme {
+.poem_frame {
   display: flex;
   justify-content: center;
   width: 100%;
   margin-top: 2em;
 }
 
+/*defualt poem css*/
 .dikt {
   padding: 3em 3em 5em;
   width: 50%;
@@ -32,6 +33,7 @@
   margin-bottom: 2em;
 }
 
+/*different alignments for the poems*/
 .center {
   text-align: center;
 }
@@ -41,32 +43,23 @@
 }
 
 .right {
-  display: flex;
+  text-align: right;
 }
 
+/*different background colors for the poems*/
 .red {
-  color: white;
-  border: none;
   background: #900c3f;
 }
 
 .grey {
-  color: white;
-  border: none;
   background: #5f6769;
 }
 
 .blue {
-  color: white;
-  border: none;
   background: #173f5f;
 }
 
-.blue > text {
-  color: white;
-}
-
-.wrapValg {
+.wrapper_choice_inner_wrapper {
   display: grid;
   column-gap: 2em;
   grid-template-columns: 1fr 1fr;
@@ -85,10 +78,6 @@
   font-size: 1em;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
-}
-
-.input_field::placeholder {
-  color: black;
 }
 
 .align_radio {
@@ -147,15 +136,11 @@
   background: white;
 }
 
-.wrapperValg {
+.wrapper_choice {
   display: flex;
   justify-content: center;
   width: 30%;
   margin: 0 auto;
-}
-
-.testClass {
-  display: flex;
 }
 
 button {
@@ -167,7 +152,7 @@ button {
   padding: 0;
 }
 
-.vanligFarge {
+.regular_color {
   color: white;
   text-transform: lowercase;
 }
@@ -179,6 +164,15 @@ button {
   padding: 1em;
 }
 
+.alignPoem_wrapper > button {
+  background: none;
+  border: none;
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 1em;
+  padding: 0;
+}
+
 .wrap_input {
-  margin: 1em;
+  margin: 1em 1em 3em;
 }
