@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import no from "../no";
 
 const AlignPoem = ({ left, center, right }) => (
-  <div>
-    <div>{no.alignText}</div>
+  <div className={"alignPoem_wrapper"}>
+    <div className={"heading"}>{no.alignText}</div>
     <div>
       <label className="container">
         <input

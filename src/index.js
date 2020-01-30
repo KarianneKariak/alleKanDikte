@@ -7,14 +7,14 @@ import MakePoem from "./components/MakePoem";
 import no from "./no";
 
 const App = () => {
-  const { line, addLine } = usePoemState([]);
+  const { line, addLine, deleteLines } = usePoemState([]);
   return (
     <div className="App">
-      <div>
-        <text className="overskrift">{no.makePoemsLikeTrygve}</text>
+      <div className="overskrift">
+        <text>{no.makePoemsLikeTrygve}</text>
       </div>
       <PoemInput saveLine={addLine} />
-      <MakePoem lines={line} />
+      <MakePoem lines={line} deleteLines={deleteLines} />
     </div>
   );
 };

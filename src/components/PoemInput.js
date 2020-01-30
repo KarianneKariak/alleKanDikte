@@ -6,20 +6,22 @@ const PoemInput = ({ saveLine }) => {
   const { value, onChange, reset } = useInputState([]);
 
   return (
-    <form
-      onSubmit={event => {
-        event.preventDefault();
-        saveLine(value);
-        reset();
-      }}
-    >
-      <input
-        onChange={onChange}
-        value={value}
-        placeholder={no.whatIsOnYourHeart}
-        className="input_field"
-      />
-    </form>
+    <div className={"wrap_input"}>
+      <form
+        onSubmit={event => {
+          event.preventDefault();
+          saveLine(value);
+          reset();
+        }}
+      >
+        <input
+          onChange={onChange}
+          value={value}
+          placeholder={no.whatIsOnYourHeart}
+          className="input_field"
+        />
+      </form>
+    </div>
   );
 };
 

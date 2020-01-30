@@ -8,10 +8,10 @@ export default initialValue => {
         addLine: lineText => {
             setLine([...line, lineText]);
         },
-        // deleteTodo: todoIndex => {
-        //     const newTodos = todos.filter((_, index) => index !== todoIndex);
-        //
-        //     setTodos(newTodos);
-        // }
+        deleteLines: lineIndex => {
+            const newLines = line.filter((_, index) => index !== lineIndex);
+
+            setLine(newLines);
+        }
     };
 };

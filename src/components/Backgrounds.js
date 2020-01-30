@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import no from "../no";
 
 const Backgrounds = ({ red, blue, grey }) => (
-  <div>
-    <div>{no.selectBackground}</div>
+    <div className={"alignPoem_wrapper"}>
+    <div className={"heading"}>{no.selectBackground}</div>
     <div>
       <label className={"container"}>
         <input

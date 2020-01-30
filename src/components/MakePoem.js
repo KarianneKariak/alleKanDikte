@@ -3,7 +3,7 @@ import classNames from "classnames";
 import Backgrounds from "./Backgrounds";
 import AlignPoem from "./AlignPoem";
 
-const MakePoem = ({ lines }) => {
+const MakePoem = ({ lines, deleteLines }) => {
   const [color, setColor] = useState("");
   const [align, setAlign] = useState("");
 
@@ -23,6 +23,7 @@ const MakePoem = ({ lines }) => {
           />
         </div>
       </div>
+      <div className="overskrift">Diktet vil dukke opp her: </div>
       <div className="ramme">
         <div
           className={classNames({
@@ -35,8 +36,14 @@ const MakePoem = ({ lines }) => {
             right: lines.length > 0 && align === "right"
           })}
         >
-          {lines.map(line => (
-            <text className={"vanligFarge"}> {line} </text>
+          {lines.map((line, index) => (
+            <>
+              <div>
+                <button onClick={() => deleteLines(index)}>
+                  <text className={"vanligFarge"}> {line} </text>
+                </button>
+              </div>
+            </>
           ))}
         </div>
       </div>
